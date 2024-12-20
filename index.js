@@ -23,6 +23,11 @@ app.use("/api", routes);
 // Error handling middleware
 app.use(errorHandler);
 
+// welcome req
+app.get("/", (req, res) => {
+  res.send("Welcome to the WebScraper API!");
+});
+
 async function startServer() {
   // await initializeDatabase();
 
