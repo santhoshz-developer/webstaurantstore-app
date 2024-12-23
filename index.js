@@ -16,7 +16,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 
-const PORT = process.env.PORT || 443;
+const PORT = process.env.PORT || 4000;
 
 // scraper function : vj
 app.use("/api", routes);
